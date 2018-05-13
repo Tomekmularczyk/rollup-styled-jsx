@@ -1,0 +1,10 @@
+{
+  "presets": [
+ 	  ["env", { "modules": false }],
+	  "react"
+  ],
+  "plugins": [
+    "styled-jsx/babel",
+    "external-helpers"
+  ]
+}

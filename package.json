@@ -1,0 +1,41 @@
+{
+  "name": "rollup-styled-jsx",
+  "version": "0.0.1",
+  "description": "components library with rollup and styled-jsx",
+  "main": "index.js",
+  "scripts": {
+    "prepublishOnly": "npm run release",
+    "release": "npm run build:dev && npm run build:prod",
+    "build:dev": "NODE_ENV=development rollup -c",
+    "build:prod": "NODE_ENV=production rollup -c"
+  },
+  "repository": "git+https://github.com/Tomekmularczyk/rollup-styled-jsx.git",
+  "keywords": [
+    "rollup",
+    "styled-jsx",
+    "components",
+    "library",
+    "package"
+  ],
+  "author": "Tomasz Mularczyk",
+  "license": "ISC",
+  "homepage": "https://github.com/Tomekmularczyk/rollup-styled-jsx#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "rollup": "^0.58.2",
+    "rollup-plugin-babel": "^3.0.4",
+    "rollup-plugin-commonjs": "^9.1.3",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-replace": "^2.0.0",
+    "styled-jsx": "^2.2.6"
+  },
+  "peerDependencies": {
+    "react": ">= 16.3.x",
+    "styled-jsx": ">= 2.x.x"
+  }
+}

@@ -7,7 +7,9 @@
     "prepublishOnly": "npm run release",
     "release": "npm run build:dev && npm run build:prod",
     "build:dev": "NODE_ENV=development rollup -c",
-    "build:prod": "NODE_ENV=production rollup -c"
+    "build:prod": "NODE_ENV=production rollup -c",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": "git+https://github.com/Tomekmularczyk/rollup-styled-jsx.git",
   "keywords": [
@@ -24,6 +26,11 @@
     "@babel/core": "^7.3.3",
     "@babel/preset-env": "^7.3.1",
     "@babel/preset-react": "^7.0.0",
+    "@storybook/addon-actions": "^5.1.9",
+    "@storybook/addon-links": "^5.1.9",
+    "@storybook/addons": "^5.1.9",
+    "@storybook/react": "^5.1.9",
+    "babel-loader": "^8.0.6",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "rollup": "^1.2.2",
